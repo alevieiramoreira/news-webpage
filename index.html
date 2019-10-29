@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="initial-scale=1">
         <link rel="stylesheet" type="text/CSS" href="style.css" >
+        <link rel="icon" href="img/logo.png">
     </head>    
     <body>
         <header>
@@ -14,48 +15,29 @@
             </div>
         </header>
         
-        <section class="container">
-            <div class="main-article">
-                <p class="article-tag">Lorem Ipsum</p>
-                <h1 class="title red-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                <br>
-                <p>Nullam et elit eu sem porta tempor. Duis magna sem, accumsan</p>
-            </div>
-            <div class="sub-article white-txt bold">
-                <p class="article-tag">Lorem Ipsum</p>
-                <p class="sub-article-txt" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="sub-article white-txt bold">
-                <p class="article-tag">Lorem Ipsum</p>
-                <p class="sub-article-txt" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+        <section class="container" id="container">
+           
         </section>
 
         <section class="news-list">
             <hr class="divider">
             <div class="list-intro">
-                <div class="intro-title grey-txt">
+                <div class="list-intro-title grey-txt">
                     <h1 class="title">Últimas Notícias</h1></div>
                 <div class="categories">
-                    <a href="#tech">Tecnologia</a>
-                    <a href="#economy">Economia</a>
-                    <a href="#world">Mundo</a>
+                    <a href="" id="tech">Tecnologia</a>
+                    <a href="" id="bussiness">Economia</a>
+                    <a href="#" id="world">Mundo</a>
                 </div>
             </div>  
-            <article class="topic">
-                <img src="img/Screenshot_4.png">
+            <div id="list">
                 
-                <div class="article-txt">
-
-                    <p>Lorem Ipsum</p>  
-                    <p> 
-                        Ut dapibus, ante porta sagittis bibendum, purus tellus volutpat quam, id luctus elit orci nec mi. Vestibulum tincidunt hendrerit orci, 
-                        eu luctus nisl efficitur ac. Fusce vulputate nibh eu porta venenatis. 
-                        Sed sem urna, tempor vitae rutrum nec, ullamcorper nec dui. Donec sit amet dictum justo.
-                    </p>
-                </div>
-
-            </article>
+            </div>
+            <br>
+            <br>
+            <button id="btnShow" class="white-txt bold">Ver mais...</button>
         </section>
+
+        <script src="js/request-api.js"></script>
     </body>
 </html>
