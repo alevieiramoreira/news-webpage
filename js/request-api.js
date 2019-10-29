@@ -14,7 +14,7 @@
         btnShowMore.style.display = 'none';
 
        let article = document.querySelectorAll('.article');
-       
+        
        for (const i in article) {
             article[i].style.display = 'inline-flex';
        }
