@@ -1,10 +1,10 @@
-    let mainUrl = 'https://newsapi.org/v2/top-headlines?country=br&apiKey=2f0002580b5a46eeb92ed9821d22ebc0';
+    const mainUrl = 'https://newsapi.org/v2/top-headlines?country=br&apiKey=2f0002580b5a46eeb92ed9821d22ebc0';
 
     fetchAPI(mainUrl);
 
     const btnTech = document.getElementById('tech');
 
-    const btnBussiness = document.getElementById('economy');
+    const btnBussiness = document.getElementById('bussiness');
 
     const btnWorld = document.getElementById('world');
 
@@ -65,16 +65,15 @@
         
        results.slice(0, 6).map ((prop, index) =>{
             let article = addElementClass('article', 'article');
-            let img = addElementClass('img');
-            let artBody = addElementClass('div', 'article-body');
-            let artTag = addElementClass('div', 'article-tag');
-            let artCategory = addElementClass('div', 'article-category');
-            let p1 = addElementClass('p');
-            let p2 = addElementClass('p');
-            let p3 = addElementClass('p');
+                img = addElementClass('img');
+                artBody = addElementClass('div', 'article-body');
+                artTag = addElementClass('div', 'article-tag');
+                artCategory = addElementClass('div', 'article-category');
+                p1 = addElementClass('p');
+                p2 = addElementClass('p');
+                p3 = addElementClass('p');
 
             if(index >= 3){
-               // appendElement(document.getElementById('hidden-list'), article);
                article.style.display = "none";
             }
 
@@ -102,9 +101,9 @@
         results.slice(0, 1).map(prop =>{
 
             let mainArticle = addElementClass('div', 'main-article');
-            let mainArtTag = addElementClass('p', 'main-article-tag');
-            let mainArtTitle = addElementClass('h1', ['title', 'red-txt']);
-            let mainArtTxt = addElementClass('p', 'main-article-txt');
+                mainArtTag = addElementClass('p', 'main-article-tag');
+                mainArtTitle = addElementClass('h1', ['title', 'red-txt']);
+                mainArtTxt = addElementClass('p', 'main-article-txt');
 
             mainArtTitle.innerHTML = prop.title;
             mainArtTag.innerHTML = prop.source.name;
@@ -142,7 +141,5 @@
         return parent.appendChild(child);
     }
     
-    // map() percorre o array da esquerda para a direita invocando uma função de retorno em cada elemento com parâmetros. Para cada chamada de retorno, o valor devolvido se torna o elemento do novo array. Depois que todos os elementos foram percorridos, map() retorna o novo array com todos os elementos “traduzidos”.
-    // fetch retorna uma promise. essa promise retorna um objeto Response com infos da resposta do server.
-    // para pegar a resposta em formato json, basta executar o método json
+
     
